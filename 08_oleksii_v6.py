@@ -3,15 +3,15 @@ import random
 answer = input ('Do you want business lanch or you\'ll choose by yourself? Y(business lanch)/N(manual check) ')
 
 if answer == 'Y' or answer == 'y' or answer == 'Н' or answer == 'н' :
-    dishes = '    eGGs ,  spAm, friEd    potatO,   ghrill, souce, mushROOMs , tomato juice, eggs,    Potato   '
-    print('Initial data', dishes)
+      dishes = '    eGGs ,  spAm, friEd    potatO,   ghrill, souce, mushROOMs , tomato juice, eggs,    Potato   '
+      print('Initial data', dishes)
 else:
     if answer == 'N' or answer == 'n' or answer == 'Т' or answer == 'т' :
-    dishes = input('Enter dishes separated by comma:   ')
-   else:
-    print('Don\'t cheat me!!! I\'ll prepare the business lanch for you')
-    dishes = '    eGGs ,  spAm, friEd    potatO,   ghrill, souce, mushROOMs , tomato juice, eggs,    Potato   '
-    print('Initial data ', dishes)
+         dishes = input('Enter dishes separated by comma:   ')
+    else:
+         print('Don\'t cheat me!!! I\'ll prepare the business lanch for you')
+         dishes = '    eGGs ,  spAm, friEd    potatO,   ghrill, souce, mushROOMs , tomato juice, eggs,    Potato   '
+         print('Initial data ', dishes)
 
 dishes2 = ''
 
@@ -46,7 +46,7 @@ for i in range(len(dishes)):
     b=str(random.randint(1,20))
     dishes[i]= dishes[i]+ '......'+b+'min'
     if len(dishes[i])>max:
-    max = len(dishes[i])
+         max = len(dishes[i])
 
 print('Your dishes can be served by time:')
 
@@ -56,15 +56,3 @@ for i in range(len(dishes)):
         j=dishes[i].index('.')
         dishes[i] = dishes[i][:j+2]+'.'+ dishes[i][j+2:]
     print(dishes[i])
-	
-'''
-testing commit
-
-'''
-
-
-    
-    
-
-
-
