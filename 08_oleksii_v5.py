@@ -25,12 +25,12 @@ dishes2 = dishes2.replace(' ','')
 dishes = dishes2[0:1]
 i=1
 while i<len(dishes2):
-    if (dishes2[i-1]!=',') and (dishes2[i].isupper()):
-        dishes = dishes + ' ' + dishes2[i].lower()
-        i+=1
-    else:
-        dishes = dishes + dishes2[i]
-        i+=1
+   if (dishes2[i-1]!=',') and (dishes2[i].isupper()):
+     dishes = dishes + ' ' + dishes2[i].lower()
+     i+=1
+   else:
+     dishes = dishes + dishes2[i]
+     i+=1
 
 #Print in list view
 dishes = dishes.split(',')
@@ -43,19 +43,25 @@ max = len(dishes[0])
 
 #Insert '......'
 for i in range(len(dishes)):
-    b=str(random.randint(1,20))
-    dishes[i]= dishes[i]+ '......'+b+'min'
-    if len(dishes[i])>max:
-    max = len(dishes[i])
+   b=str(random.randint(1,20))
+   dishes[i]= dishes[i]+ '......'+b+'min'
+   if len(dishes[i])>max:
+     max = len(dishes[i])
 
 print('Your dishes can be served by time:')
 
 #Rows alignment
 for i in range(len(dishes)):  
-    while len(dishes[i])<max:
+     while len(dishes[i])<max:
         j=dishes[i].index('.')
         dishes[i] = dishes[i][:j+2]+'.'+ dishes[i][j+2:]
-    print(dishes[i])
+     print(dishes[i])
+	 
+	 
+'''
+test commit
+
+'''
 
 
     
