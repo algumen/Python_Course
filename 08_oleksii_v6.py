@@ -26,11 +26,11 @@ dishes = dishes2[0:1]
 i=1
 while i<len(dishes2):
    if (dishes2[i-1]!=',') and (dishes2[i].isupper()):
-     dishes = dishes + ' ' + dishes2[i].lower()
-     i+=1
+       dishes = dishes + ' ' + dishes2[i].lower()
+       i+=1
    else:
-     dishes = dishes + dishes2[i]
-     i+=1
+       dishes = dishes + dishes2[i]
+       i+=1
 
 #Print in list view
 dishes = dishes.split(',')
