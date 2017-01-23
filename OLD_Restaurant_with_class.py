@@ -12,13 +12,6 @@ class Dish:
 	     print(menu_item)
 	     
 		 
-		 
-		
-		
-		
-		
-		
-
 
 input_List = input("Input your favorite dishes (comma separated):\n")
 
