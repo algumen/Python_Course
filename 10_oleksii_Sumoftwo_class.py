@@ -1,8 +1,6 @@
 #Чесно кажучи підгледів в інеті - сам би не додумався так додавати )
 
-
 class Solution(object):
-
     def getSum(self, a, b):
         MAX_INT = 0x7FFFFFFF
         MIN_INT = 0x80000000
