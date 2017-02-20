@@ -6,7 +6,7 @@ from random import randint
 def test_create_candidate_valid():
 
     # The test data:
-    candidates_url = "http://candidates.com"  # Replace this with the real URL
+    candidates_url = "http://qainterview.cogniance.com/candidates"  # Replace this with the real URL
     candidate_name = "Test Name " + str(randint(0, 100000000))
     candidate_position = "Technical Support"
 
