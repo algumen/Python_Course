@@ -5,7 +5,7 @@ from random import randint
 
 def test_brute_force():
     i = 0
-    while i < 10:
+    while i < 100:
         candidates_url = "http://qainterview.cogniance.com/candidates"  # Replace this with the real URL
         candidate_name = "Test Name" + str(randint(0, 100000000)) + 'OG'
         candidate_position = "Technical Support" + str(randint(0, 100000000)) + 'OG'
